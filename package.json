@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "npm --prefix frontend start",
+    "frontend": "npm --prefix frontend start",
+    "backend": "npm --prefix backend start",
+    "build": "npm --prefix frontend run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.6"
+  }
+}
