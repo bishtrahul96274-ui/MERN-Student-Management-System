@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://mern-student-management-system-1.onrender.com";
 const emptyForm = {
     id: "",
     name: "",

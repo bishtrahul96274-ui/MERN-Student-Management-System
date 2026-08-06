@@ -7,11 +7,18 @@ function Data() {
   useEffect(() => {
 
     const getData = async () => {
+      try {
+        const res = await fetch(
+          "https://mern-student-management-system-1.onrender.com/"
+        );
 
-      const res = await fetch("http://localhost:5000/");
-      const data = await res.json();
+        const result = await res.json();
 
-      setData(data);
+        setData(result);
+
+      } catch (error) {
+        console.log("Error:", error);
+      }
     };
 
     getData();
